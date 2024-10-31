@@ -1,0 +1,118 @@
+html {
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgb(97, 97, 97);
+}
+
+.header-container {
+    top: 0;
+    left: 0;
+    min-height: 80px;
+    max-height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-container .title {
+    flex-grow: 1;
+    margin-left: 30px;
+    color: white;
+}
+
+.header-container .icons {
+    margin-right: 50px;
+}
+
+.header-container i {
+    margin: 20px;
+    color: black;
+}
+
+.side-menu {
+    left: 0;
+    top: 80px;
+    min-width: 240px;
+    max-width: 240px;
+    height: 100%;
+    position: fixed;
+    background-color: lightgray;
+}
+
+.side-menu ul {
+    margin: 0;
+    margin-left: -15px;
+    height: 100%;
+    overflow: auto;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: #4e4e4e;
+}
+
+.side-menu li {
+    margin: 20px auto;
+    list-style: none;
+}
+
+.main {
+    margin-top: 90px;
+    margin-left: 250px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.card {
+    padding: 10px;
+    height: 25vh;
+    border-radius: 10px;
+    background-color: peru;
+    position: relative;
+}
+
+.card h1,p {
+    margin: 0;
+}
+
+.card i {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    font-size: 5rem;
+    color: rgb(0 0 0 / 50%);
+}
+
+.card-button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 1rem;
+}
+
+.card-button {
+    height: 10vh;
+    box-shadow: -5px 5px 5px gray;
+}
+
+/* * {
+    border: 1px solid red;
+} */
